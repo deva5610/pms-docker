@@ -38,7 +38,7 @@ function installFromUrl {
 
 function installFromRawUrl {
   local remoteFile="$1"
-  curl -J -L -o /tmp/plexmediaserver.deb "${remoteFile}"
+  curl -J -L -o /tmp/plexmediaserver.deb "https://artifacts.plex.tv/plex-media-server-alpha/1.16.7.1574-4215f2c66/debian/plexmediaserver_1.16.7.1574-4215f2c66_amd64.deb"
   local last=$?
 
   # test if deb file size is ok, or if download failed
